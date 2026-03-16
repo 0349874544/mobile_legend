@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cinzel, serif;
+
+}
+
+body{
+    overflow-x: hidden;   
+}
+.main-width{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(circle at center, #7ce0ff 0%, #4a6bff 35%, #4b2a8f 65%, #120824 100%);
+    position: relative;
+}
+.hero header .logo h2 a{
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+.hero header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 30px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+
+/* Telecharger tsy ao anatiny*/
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom: 2px solid white;
+}
+nav ul li.active a{
+    border-bottom: 2px solid white;
+}
+nav ul li.btn a{
+    background: transparent;
+    color: white;
+    border: 1px solid #4b2a8f;
+    padding: 9px 20px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 150px;
+}
+nav ul li.btn:hover a{
+    border: 1px solid white;
+    color: black;
+    background: white;
+    transition: .4s;
+}
+.context{
+    padding-top: 140px;
+
+}
+.context .main-text{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+.context .main-text h6{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+.context .main-text h1{
+    font-size: 60px;
+    line-height: 1;
+    color: white;
+    margin: 0px 0px 45px;
+    font-family: Cinzel, serif;
+    letter-spacing: 2px;
+}
+.context .main-text h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.context .main-text p{
+    font-family: sans-serif;
+    max-width: 100%;
+    width: 460px;
+    color: white;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.context .main-text a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border: 1px solid white;
+    padding: 9px 25px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.context .main-text a:hover{
+    transform: scale(1.2);
+    border: 1px solid #f5dca8;
+    background: transparent;
+    color: white;
+    transition: .4s;
+}
+.context .main-text a.fnt{
+    border: 1px solid #f5dca8;
+    color: white;
+    background: transparent;
+    margin-left: 20px;
+}
+.context .main-text a.fnt i{
+    margin-right: 12px;
+}
+.context .main-text a.fnt:hover{
+    color: black;
+    background: white;
+    border: 1px solid white;
+    transition: .4s;
+}
+.context .social{
+    position: relative;
+    z-index: 2;
+    margin-top: 200px;
+    padding-bottom: 40px;
+}
+.context .social a{
+    display: inline-block;
+    color: #120824;
+    margin-right: 170px;
+    font-size: 24px;
+}
+.context .social a:hover{
+    transform: scale(1.2);
+    transition: .4s;
+    color: white;
+}
+.image{
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+    text-align: right;
+    height: 85%;
+    width: 100%;
+}
+.image img{
+    height: 95%;
+    border-radius: 30px;
+    width: 40%;
+    margin-top: 20px;
+}
+
+
+
+@media only screen and (max-width:768px){
+    .main-width{
+        width: 700px; 
+    }
+    .hero header .logo h2 a{
+        font-size: 19px;
+    }
+    nav ul li a{
+        margin-left: 15px;
+        font-size: 16px;    
+    }
+    nav ul li.btn a{
+        font-size: 17px;
+        margin-left: 20px;
+        margin-right: -12px;
+    }
+    .context{
+    padding-top: 70px;
+    }
+    .context .main-text{
+        margin-bottom: 40px;
+    }
+    .context .main-text h6{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .context .main-text h1{
+        font-size: 44px;
+        margin: 2px 0px 30px;
+        letter-spacing: 1px;
+    }
+    .context .main-text h3{
+        font-size: 15px;
+        color: black;
+    }
+    .context .main-text p{
+        font-family: sans-serif;
+        width: 300px;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+    .context .main-text a{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        width: fit-content;
+        margin-top: 100px;
+    }
+    .context .main-text a.fnt{
+        background: transparent;
+        margin-left: 50px;
+        width: fit-content;
+        margin-top: 5px;
+        display: inline-block;
+        
+    }
+    .context .main-text a.fnt i{
+        margin-right: 5px;
+    } 
+    .context .social{
+        margin-top: 10px;
+        padding-bottom: 30px;
+    }
+    .context .social a{
+        margin-top: 80px;
+        margin-right: 100px;
+        font-size: 17px;
+    }
+    .image{
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+        text-align: right;
+        height: 80%;
+        width: 100%;
+    }
+    .image img{
+        width: 40%;
+        margin-top: 15px;
+    }
+}
+
+/*Pour les tablettes*/
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+       .main-width{
+        width: 780px; 
+    }
+    .hero header .logo h2 a{
+        font-size: 18px;
+    }
+    nav ul li a{
+        margin-left: 40px;
+        font-size: 14px;    
+    }
+    nav ul li.btn a{
+        font-size: 15px;
+        margin-left: 40px;
+        margin-right: -20px;
+    }
+    .context{
+    padding-top: 70px;
+    }
+    .context .main-text{
+        margin-bottom: 40px;
+    }
+    .context .main-text h6{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .context .main-text h1{
+        font-size: 46px;
+        margin: 2px 0px 30px;
+        letter-spacing: 1px;
+    }
+    .context .main-text h3{
+        font-size: 17px;
+        color: black;
+    }
+    .context .main-text p{
+        font-family: sans-serif;
+        width: 420px;
+        font-size: 15px;
+        margin-bottom: 70px;
+    }
+    .context .main-text a{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        width: fit-content;
+        margin-top: 100px;
+    }
+    .context .main-text a.fnt{
+        background: transparent;
+        margin-left: 160px;
+        width: fit-content;
+        margin-top: 5px;
+        display: inline-block;
+        
+    }
+    .context .main-text a.fnt i{
+        margin-right: 2px;
+    } 
+    .context .social{
+        padding-bottom: 30px;
+        margin-top: 10px;
+    }
+    .context .social a{
+        margin-right: 225px;
+        font-size: 17px;
+    }
+    .image{
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+        text-align: right;
+        height: 75%;
+        width: 100%;
+    }
+    .image img{
+        width: 40%;
+        margin-top: 15px;
+    }
+}

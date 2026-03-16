@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cinzel, serif;
+
+}
+
+body{
+    overflow-x: hidden;   
+}
+.main-width{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(circle at center, #7ce0ff 0%, #4a6bff 35%, #4b2a8f 65%, #120824 100%);
+    position: relative;
+}
+.hero header .logo h2 a{
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+.hero header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 30px;
+}
+.hero p{
+    color: white;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom: 2px solid white;
+}
+nav ul li.active a{
+    border-bottom: 2px solid white;
+}
+nav ul li.btn a{
+    background: transparent;
+    color: white;
+    border: 1px solid #4b2a8f;
+    padding: 9px 20px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 150px;
+}
+
+nav ul li.btn:hover a{
+    border: 1px solid white;
+    color: black;
+    background: white;
+    transition: .4s;
+}
+.context h3{
+    margin-top: 30px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+.context ul li{
+    display: inline-block;
+    justify-content: center;
+    padding: 0px 30px 20px 70px;
+    font-size: 18px;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: -4px;
+}
+.context ul li a{
+    text-decoration: none;
+    color: red;
+    font-weight: 800;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 30px;
+}
+.context ul li a:hover{
+    color:beige;
+    background: #120824;
+    transition: .5s;
+    border: 1px solid white;
+}
+.context p{
+    font-size: 18px;
+    margin-top: 20px;
+
+}
+.assassin {
+    margin-top: 50px;
+    
+}
+.assassin .article1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.assassin .article1 .left img{
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+}
+.assassin .article1 .right{
+    max-width: 50%;
+    margin-left: 30px;
+}
+
+.combattant {
+    margin-top: 50px;
+    
+}
+.combattant .article1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.combattant .article1 .left img{
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+}
+.combattant .article1 .right{
+    max-width: 50%;
+    margin-left: 30px;
+}
+
+.tireur {
+    margin-top: 50px;
+    
+}
+.tireur .article1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.tireur .article1 .left img{
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+}
+.tireur .article1 .right{
+    max-width: 50%;
+    margin-left: 30px;
+}
+
+.mage {
+    margin-top: 50px;
+    
+}
+.mage .article1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.mage .article1 .left img{
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+}
+.mage .article1 .right{
+    max-width: 50%;
+    margin-left: 30px;
+}
+
+.support {
+    margin-top: 50px;
+    
+}
+.support .article1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.support .article1 .left img{
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+}
+.support .article1 .right{
+    max-width: 50%;
+    margin-left: 30px;
+}
+
+.tank{
+    margin-top: 50px;
+    
+}
+.tank .article1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.tank .article1 .left img{
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+}
+.tank .article1 .right{
+    max-width: 50%;
+    margin-left: 30px;
+}
+.article1 .right p{
+    color: aqua;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.tireur .article1 .right p{
+    color: blueviolet;
+}
+.mage .article1 .right p{
+    color: darkgreen;
+}
+.main-width h4{
+    color: yellowgreen;
+    text-align: center;
+    padding: 10px 0px 30px;
+    font-size: 25px;
+}
+.retour_up{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-block;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+
+}
+/* lasa miadana rehef mscroll*/
+html{
+    scroll-behavior: smooth;
+}
+
+.retour_up:hover{
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 8px;
+}
